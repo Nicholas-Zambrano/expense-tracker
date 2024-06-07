@@ -1,0 +1,24 @@
+.initialPage {
+    background-color: #7F3DFF;    
+    flex: 1; /* This makes the .initialPage div take up the remaining space in the flex container (body) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    &__title{
+        color: white;
+        font-size: 7rem;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    &__overlay{
+        position: relative;
+        top: 10rem;
+        left: 2rem;
+    }
+
+
+
+
+}
