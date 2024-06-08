@@ -36,8 +36,6 @@ function InitialPage() {
             </div>
         </div>
     )
-
-
 }
 
 export default InitialPage;
