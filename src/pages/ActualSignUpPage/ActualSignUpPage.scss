@@ -1,0 +1,35 @@
+
+.actualSignUpPage{
+
+    &__headerContainer{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+
+
+    &__header{
+        border: solid 0.3rem;
+        // width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 5rem;
+    }
+
+    &__arrow{
+        position: relative;
+        right: 15rem;
+        cursor: pointer;
+
+    }
+
+    &__title{
+        // position: absolute;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}

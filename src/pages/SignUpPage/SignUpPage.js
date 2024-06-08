@@ -9,17 +9,15 @@ import { Pagination } from "swiper/modules";
 import "./SignUpPage.scss"
 import SignUpButton from "../../components/SignUpButton/SignUpButton";
 import LoginButton from "../../components/LoginButton/LoginButton";
+import { useNavigate } from "react-router-dom";
 
 
 
 //  the function needs to be in capital letter
 function SignUpPage(){
 
-    // const swiper = new Swiper('.swiper', {
-    //     // configure Swiper to use modules
-    //     modules: [Navigation, Pagination],
-    
-    //   });
+
+
 
     return(
         <div>
@@ -65,8 +63,8 @@ function SignUpPage(){
             </section>
 
             <section className="signUp__buttonWrapper">
-                <div className="signUp__signUpButton">
-                    <SignUpButton />
+                <div className="signUp__signUpButton" >
+                    <SignUpButton/>
                 </div>
 
                 <div className="signUp__loginButton">
