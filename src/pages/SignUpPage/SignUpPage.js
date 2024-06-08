@@ -7,6 +7,8 @@ import cash_image from "../..//assets/cash_image.svg";
 import 'swiper/css/pagination';
 import { Pagination } from "swiper/modules";
 import "./SignUpPage.scss"
+import SignUpButton from "../../components/SignUpButton/SignUpButton";
+import LoginButton from "../../components/LoginButton/LoginButton";
 
 
 
@@ -36,14 +38,14 @@ function SignUpPage(){
                 >
                 <SwiperSlide className="signUp__swiperWrapper">
                     <img className="signUp__swiperImage" src={hand_image} alt="hand holding cash" />
-                    <p>
+                    <p  className="signUp__imageText">
                         Become your own money manager
                         <br/>
                          and make every cent count</p>
                     </SwiperSlide>
                 <SwiperSlide className="signUp__swiperWrapper" >
                     <img  className="signUp__swiperImage" src={cash_image} alt="cash image"/>
-                    <p>
+                    <p className="signUp__imageText">
                         Track your transaction easily, 
                         <br/>
                         with categories and financial report.
@@ -51,18 +53,26 @@ function SignUpPage(){
                     </SwiperSlide>
                 <SwiperSlide className="signUp__swiperWrapper">
                     <img  className="signUp__swiperImage" src= {plan_image} alt="plan image"/>
-                    <p>
+                    <p className="signUp__imageText">
                         Setup budget for each category
                         <br/>
                         so you in control
                     </p>
                     </SwiperSlide>
                 </Swiper>
+            
 
             </section>
 
+            <section className="signUp__buttonWrapper">
+                <div className="signUp__signUpButton">
+                    <SignUpButton />
+                </div>
 
-            <h1>Sign up</h1>
+                <div className="signUp__loginButton">
+                    <LoginButton/>
+                </div>
+            </section>
         </div>
     )
 

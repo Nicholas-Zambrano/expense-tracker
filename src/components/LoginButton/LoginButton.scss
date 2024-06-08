@@ -1,0 +1,23 @@
+
+.loginButton{
+    &__loginButton{
+        // width: 3rem;
+        // height: 4rem;
+        width: 20rem;
+        height: 5rem;
+        background-color: #7F3DFF;
+        box-shadow: 1rem 0.5rem 0.3rem rgba(79, 35, 121, 0.1), 0 0 3px rgba(133, 69, 69, 0.08);
+        border-radius: 1rem;
+        border: white;
+        color: white;
+
+        cursor: pointer;
+        font-size: 2rem;
+
+        &:hover{
+            box-shadow:10px 5px 5px rgb(144, 11, 146);
+        }
+    }
+
+
+}
