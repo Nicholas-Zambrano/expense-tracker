@@ -6,6 +6,8 @@ import { useState } from "react";
 import SignUpButton from "../../components/SignUpButton/SignUpButton";
 import { Link } from "react-router-dom";
 
+import signingImage from "../../assets/signing_image.gif";
+
 function ActualSignUpPage(){
 
     // create useStates for each input, name ,email,password
@@ -39,7 +41,7 @@ function ActualSignUpPage(){
 
     const arrowClick = ()=>{
         setTimeout(() => {
-            navigate(-1)
+            navigate("/signUp")
         }, 250);
     }
 
@@ -116,6 +118,8 @@ function ActualSignUpPage(){
             </section>
 
             <section className="actualSignUpPage__signUpSection">
+
+                <img className="actualSignUpPage__signingImage" src={signingImage} alt="signing" />
                 
                 <form className="actualSignUpPage__form" onSubmit={handleSubmit}>
                     <div className="actualSignUpPage__name actualSignUpPage__formGroup">
@@ -163,8 +167,8 @@ function ActualSignUpPage(){
                 </form>
 
                 <div className="actualSignUpPage__loginSection">
-                    <p>Already have an account ?</p>
-                    <Link to="/login">Login</Link>
+                    <p className="actualSignUpPage__loginText">Already have an account ?</p>
+                    <Link className="actualSignUpPage__loginLink" to="/login">Login</Link>
 
                 </div>
 
