@@ -57,13 +57,21 @@ function LoginPage(){
             password:loginData.password
 
         })
+
+        // after logging in , we need to store the token
+        if(data){
+            // here we access the token
+            localStorage.setItem("authToken",data.session.access_token)
+            // then navigate to home page, we allow the window to reload
+            // window.location.href("/setup")
+        }
+        
         console.log(loginData);
         console.log(data);
     }
     catch(error){
         setIsError("unexpected error with login you in")
-        alert("unexpected error with login you in")
-
+        alert("unexpected error with logging you in")
     }
     }
 
