@@ -5,6 +5,8 @@ import "./App.scss"
 import SignUpPage from "./pages/SignUpPage/SignUpPage";
 import ActualSignUpPage from "./pages/ActualSignUpPage/ActualSignUpPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
+import SetUpPage from "./pages/SetUpPage/SetUpPage";
+import BalancePage from "./pages/BalancePage/BalancePage";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <Route path="/signUp"  element={<SignUpPage/>}  />
         <Route path = "/signing" element={<ActualSignUpPage/>}/>
         <Route path ="/login" element={<LoginPage/>} />
+        <Route path="/setup" element={<SetUpPage/>}/> 
+        <Route path="/balance" element={<BalancePage/>} />
       </Routes>
       
       </BrowserRouter>

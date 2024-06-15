@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 import LoginButton from "../../components/LoginButton/LoginButton";
 import { useState } from "react";
 import { supabase } from "../../config/client";
+import { useNavigate } from "react-router-dom";
 
 function LoginPage(){
 
+    const navigate =useNavigate();
     const [isEmail,setIsEmail] = useState ("");
     const [isPassword,setIsPassword] = useState("")
     const[isError,setIsError] =  useState("")
@@ -63,7 +65,8 @@ function LoginPage(){
             // here we access the token
             localStorage.setItem("authToken",data.session.access_token)
             // then navigate to home page, we allow the window to reload
-            // window.location.href("/setup")
+            window.location.href="/setup"
+            // navigate("/setup");
         }
         
         console.log(loginData);
