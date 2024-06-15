@@ -29,7 +29,7 @@ function BalancePage(){
         setIsSubmitted(true)
 
         setTimeout(() => {
-            window.location.href("/dashboard") 
+            window.location.href="/dashboard";
             
         }, 2000);
     }

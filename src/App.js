@@ -7,6 +7,7 @@ import ActualSignUpPage from "./pages/ActualSignUpPage/ActualSignUpPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import SetUpPage from "./pages/SetUpPage/SetUpPage";
 import BalancePage from "./pages/BalancePage/BalancePage";
+import DashboardPage from "./pages/DashboardPage/DashboardPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path ="/login" element={<LoginPage/>} />
         <Route path="/setup" element={<SetUpPage/>}/> 
         <Route path="/balance" element={<BalancePage/>} />
+        <Route path="/dashboard" element= {<DashboardPage/>}/>
       </Routes>
       
       </BrowserRouter>
